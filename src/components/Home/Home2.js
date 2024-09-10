@@ -16,25 +16,32 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              A Glimpse of <span className="purple">Me</span>
             </h1>
             <p className="home-about-body">
-              Football is my first love.❤️
+              I'm passionate about technology and innovation. 🌟
               <br />
               <br />
-              My technical skills include:
+              With a strong background in:
               <i>
-                <b className="purple"> HTML, Java, Javascript and ReactJs. </b>
+                <b className="purple"> HTML, JavaScript, ReactJS, and Node.js. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b>
-              </i>
+              I thrive on creating impactful <i>
+                <b className="purple">web solutions and applications</b>
+              </i> that solve real-world problems.
               <br />
               <br />
-              I'm the Captain of my College football team.⚽
+              Outside of coding, I enjoy:
+              <ul>
+                <li>
+                  <b className="purple">Playing football</b> and leading my college team.
+                </li>
+                <li>
+                  <b className="purple">Exploring new technologies</b> and trends.
+                </li>
+              </ul>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -45,9 +52,9 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>Connect With Me</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Let's stay in touch! Reach out through any of the platforms below:
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -97,4 +104,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

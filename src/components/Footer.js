@@ -4,12 +4,24 @@ import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Button } from "react-bootstrap";
 
 function Footer() {
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleSubscribe = () => {
+    alert("Subscribed successfully!");
+  };
+
   let date = new Date();
   let year = date.getFullYear();
+
   return (
     <Container fluid className="footer">
       <Row>
@@ -62,8 +74,25 @@ function Footer() {
               </a>
             </li>
           </ul>
+          <div className="footer-buttons">
+            <Button
+              variant="outline-light"
+              className="footer-button"
+              onClick={() => window.location = "mailto:varunkewlani.004@gmail.com"}
+            >
+              <AiOutlineMail /> Email Varun
+            </Button>
+            
+          </div>
         </Col>
       </Row>
+      <Button
+        variant="outline-light"
+        className="back-to-top"
+        onClick={scrollToTop}
+      >
+        Back to Top
+      </Button>
     </Container>
   );
 }
